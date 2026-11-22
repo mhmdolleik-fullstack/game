@@ -1,0 +1,9 @@
+node_modules/
+build/
+release/
+.env
+.env.*
+*.keystore
+*.p12
+*.jks
+local.properties

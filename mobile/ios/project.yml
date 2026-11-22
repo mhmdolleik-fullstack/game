@@ -1,0 +1,21 @@
+name: Faultline
+options:
+  bundleIdPrefix: game.faultline
+targets:
+  Faultline:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: FaultlineApp.swift
+      - path: ../../dist
+        type: folder
+    settings:
+      base:
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        PRODUCT_BUNDLE_IDENTIFIER: game.faultline.descent
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+

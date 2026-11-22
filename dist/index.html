@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0a1017">
+<title>FAULTLINE | Descent Protocol</title>
+<link rel="stylesheet" href="style.css">
+<script src="chapters.js" defer></script>
+<script src="survival.js" defer></script>
+<script src="combat.js" defer></script>
+<script src="game.js" defer></script>
+</head>
+<body>
+<aside id="rotate">↻<strong>Rotate to landscape</strong><span>Turn your phone sideways to play FAULTLINE.</span></aside><main>
+<header><span class="brand"><b>◈</b> FAULTLINE</span><div class="tools"><button id="menu">Levels</button><button id="sound" aria-label="Mute sound">Sound on</button><button id="pause">Pause</button></div></header>
+<section class="mission" aria-label="Current chapter"><div><p id="chapter">CHAPTER 001</p><h1 id="title">The Intake</h1><p id="story"></p></div><div class="record">RETRIES <strong id="deaths">00</strong></div></section>
+<section class="screen" aria-label="Game">
+<canvas id="view" aria-label="Faultline platformer"></canvas>
+<div class="hud"><span id="vitals">HP 100</span><span><span id="shieldState">Shield ready</span></span><progress id="energy" value="1" max="1" aria-label="Stability field charge"></progress></div>
+<div class="route"><span id="section">SECTOR 1 / 3</span><progress id="travel" value="0" max="1" aria-label="Level progress"></progress></div>
+<p id="notice" role="status"></p>
+<div id="overlay" class="overlay"><div class="dialog"><p id="eyebrow">DESCENT PROTOCOL</p><h2 id="headline">FAULTLINE</h2><p id="message">Guide survey engineer Mara Vale through a collapsing underground facility. Watch for amber warnings and use your stability field to hold the route together.</p><div id="selector"><button id="firstLevel">Level 1 · Fractured Entry</button> <label for="pick">Select level</label> <input id="pick" value="1" inputmode="numeric" pattern="[0-9]*" aria-describedby="unlocked"><small id="unlocked"></small></div><button id="start">Play level <span>→</span></button></div></div>
+</section>
+<section class="touch" aria-label="Touch controls"><div><button data-action="left" aria-label="Move left">←</button><button data-action="right" aria-label="Move right">→</button></div><div><button data-action="shoot">Shoot</button><button id="nova" data-action="nova" hidden>Nova</button><button data-action="dash">Dash</button><button data-action="field">Shield</button><button data-action="jump">Jump ↑</button></div></section>
+<footer><span><kbd>A</kbd> <kbd>D</kbd> Move</span><span><kbd>Space</kbd> Jump</span><span><kbd>Shift</kbd> Hold field</span><span><kbd>F</kbd> Shoot · <kbd>C</kbd> Nova</span><span><kbd>X</kbd> Air dash</span><span><kbd>Esc</kbd> Pause</span></footer>
+</main>
+</body>
+</html>
+
+

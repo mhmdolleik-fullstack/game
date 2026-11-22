@@ -1,0 +1,18 @@
+plugins { id 'com.android.application' version '8.7.3' }
+android {
+    namespace 'game.faultline.descent'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'game.faultline.descent'
+        minSdk 26
+        targetSdk 35
+        versionCode 5
+        versionName '5.0'
+    }
+    sourceSets.main {
+        manifest.srcFile 'AndroidManifest.xml'
+        java.srcDirs = ['.']
+        java.include 'MainActivity.java'
+        assets.srcDirs = ['../../build']
+    }
+}
